@@ -75,3 +75,24 @@
 .flex-box-container-3 img:hover{
     box-shadow: 0px 10px 50px rgba(37, 50, 233, 11);  
 }
+
+
+.container-4{
+    width: 75%;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+.container-4 h2{
+    text-align: center;
+}
+
+.flex-box-container-4{
+    display: flex;
+    margin: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    border: 2px solid black;
+
+}
+

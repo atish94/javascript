@@ -93,3 +93,55 @@ function rpsFrontEnd(humanImageChoice, botImageChoice, finalMessage){
     botChoiceDiv.innerHTML = "<img src='" + imagesDatabase[botImageChoice] + "'height=150 width=150 style='box-shadow: 0px 10px 50px rgba(255, 0, 0)'>";
     document.getElementById('flex-box-rps').appendChild(botChoiceDiv);
 }
+
+
+var all_btns = document.getElementsByTagName("button");
+var copyAllBtns = [];
+
+for (let i=0; i<all_btns.length; i++){
+    copyAllBtns.push(all_btns[i].classList[1]);
+}
+
+function changeColor(btnThingy){
+    if (btnThingy.value === "red"){
+        buttonsRed();
+    } else if (btnThingy.value === "green"){
+        buttonsGreen();
+    } else if (btnThingy.value === "reset"){
+        buttonsReset();
+    } else if (btnThingy.value === "random"){
+        buttonsRandom();
+    }
+}
+
+
+function buttonsRed(){
+    for (let i=0; i<all_btns.length; i++){
+        all_btns[i].classList.remove(all_btns[i].classList[1]);
+        all_btns[i].classList.add('btn-danger');
+    }
+}
+
+function buttonsGreen(){
+    for (let i=0; i<all_btns.length; i++){
+        all_btns[i].classList.remove(all_btns[i].classList[1]);
+        all_btns[i].classList.add('btn-success');
+    }
+}
+
+function buttonsReset(){
+    for (let i=0; i<all_btns.length; i++){
+        all_btns[i].classList.remove(all_btns[i].classList[1]);
+        all_btns[i].classList.add(copyAllBtns[i]);
+    }
+}
+
+function buttonsRandom(){
+    var rndomColor = ['btn-primary','btn-danger','btn-warning','btn-success'];
+
+    for (let i=0; i<all_btns.length; i++){
+        var rndomNumber = Math.floor(Math.random()*rndomColor.length);
+        all_btns[i].classList.remove(all_btns[i].classList[1]);
+        all_btns[i].classList.add(rndomColor[rndomNumber]);
+    }
+}
