@@ -1,2 +1,2 @@
 # javascript
-Creating fun project with html, css and JavaScript
+Based on the JavaScript course by Clever Programmer (On Youtube).
