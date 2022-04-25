@@ -89,10 +89,65 @@
 
 .flex-box-container-4{
     display: flex;
-    margin: 20px;
-    justify-content: space-around;
+    padding: 20px;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     border: 2px solid black;
 
 }
 
+.container-5{
+    border: 1px solid black;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.flex-box-blackjack-row-3{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.flex-box-blackjack-row-1{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+}
+
+.flex-box-blackjack-row-1 div{
+    border: 1px solid black;
+    flex: 1;
+    padding: 10px;
+    height: 350px;
+    text-align: center;
+}
+
+.btns{
+    padding: 15px;
+}
+
+.btns button{
+    border: 1px solid black;
+}
+
+.btns button:hover{
+    border: 1px solid white;
+}
+
+.imgg{
+    background: url('https://img.freepik.com/free-vector/poker-table-background-green-color_47243-1073.jpg?w=900;') center;
+
+}
+
+table, th, td{
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid black;
+}
